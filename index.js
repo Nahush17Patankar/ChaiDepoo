@@ -27,3 +27,7 @@ app.listen(process.env.PORT, () => {
     console.log(`App listening on port ${port}`);
 
 })
+
+app.get('/github', (req,res) => {
+    res.json({name: "Nahush", compnay:"Cogni"})
+})
